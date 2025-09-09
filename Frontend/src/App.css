@@ -62,6 +62,52 @@ main .right {
   overflow: auto;
 }
 
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: auto;
+    height: 50%;
+  }
+
+  main .left .review-btn {
+    align-self: center; /* center button horizontally */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  main .right {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  main .left,
+  main .right {
+    height: auto;
+    min-height: 250px;
+  }
+
+  .left .code {
+    min-height: 200px;
+  }
+
+  main .left .review-btn {
+    width: 100%;
+    text-align: center;
+  }
+  main .left .review {
+    scale: 0.9;
+    padding: 0.3rem 1rem;
+  }
+}
 
 
 
